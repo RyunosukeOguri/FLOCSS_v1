@@ -1,0 +1,76 @@
+// Gray colors
+$dark-color: #333;
+$light-color: #fff;
+$gray-color: lighten($dark-color, 40%);
+$gray-color-dark: darken($gray-color, 20%);
+$gray-color-light: lighten($gray-color, 20%);
+
+$border-color: #C7C7CC;
+$border-color-dark: darken($border-color, 15%);
+$bg-color: lighten($dark-color, 66%);
+$bg-color-dark: darken($bg-color, 3%);
+$bg-color-light: $light-color;
+
+// Global
+$html-font-size: 100%;
+$html-line-height: 1.428571429;
+$body-bg: #EFEFF4;
+$body-font-color: #333;
+$body-font-light-color: rgba($body-font-color, .5);
+
+// Font Size
+$font-size-base: 1.4rem;
+$font-size-sm: 1rem;
+$font-size-sm-up: 1.2rem;
+$font-size-md: 1.6rem;
+$font-size-md-up: 1.8rem;
+$font-size-lg: 2rem;
+
+// Fonts
+// Credit: https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/
+// $base-font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto;
+$base-font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Ubuntu, Roboto, Noto, "Segoe UI", Arial, sans-serif;
+$fallback-font-family: "Helvetica Neue", sans-serif;
+$cjk-font-family: $base-font-family, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Hiragino Kaku Gothic Pro", Meiryo, "Malgun Gothic", $fallback-font-family;
+$body-font-family: $base-font-family, $fallback-font-family;
+
+// Brand color
+$brand-palette: (
+  primary: #0C2542, //$primary-colorの変数で使用可。
+  secondary: #FF0D65, //$secondary-colorの変数で使用可。
+  accent: #5764c6, //$accent-colorの変数で使用可。
+  success: #32b643, //$success-colorの変数で使用可。
+  warning: #f21b7e, //$warning-colorの変数で使用可。
+  error: #FE3824, //$error-colorの変数で使用可。
+  default: #282c2c //$default-colorの変数で使用可。
+);
+@include add-brand-colors;
+
+$link-color: $secondary-color;
+$link-color-dark: darken($link-color, 10%);
+
+// Sizes
+$margin-sizes: (
+  reset: 0,
+  xs: 5,
+  s: 10,
+  m: 20,
+  l: 30,
+  ll: 45,
+  xl: 60
+);
+$padding-sizes: (
+  reset: 0,
+  xs: 5,
+  s: 10,
+  m: 20,
+  l: 30,
+  ll: 45,
+  xl: 60
+);
+
+// Button
+$button-border-radius: 3px;
+
+
+// Card

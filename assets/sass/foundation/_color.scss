@@ -1,0 +1,30 @@
+/* Color
+   ----------------------------------------------------------------- */
+
+/// Transfers the colors in the `$brand-palette`map into variables, such as `$primary-color` and `$secondary-color`. Call this mixin below the Global section of your settings file to properly migrate your codebase.
+@mixin add-brand-colors() {
+  @if map-has-key($brand-palette, primary) {
+    $primary-color: map-get($brand-palette, primary) !global;
+    $primary-color-dark: darken(map-get($brand-palette, primary), 10%) !global;
+    $primary-color-light: lighten(map-get($brand-palette, primary), 10%) !global;
+  }
+
+  @if map-has-key($brand-palette, secondary) {
+    $secondary-color: map-get($brand-palette, secondary) !global;
+  }
+  @if map-has-key($brand-palette, accent) {
+    $accent-color: map-get($brand-palette, accent) !global;
+  }
+  @if map-has-key($brand-palette, success) {
+    $success-color: map-get($brand-palette, success) !global;
+  }
+  @if map-has-key($brand-palette, warning) {
+    $warning-color: map-get($brand-palette, warning) !global;
+  }
+  @if map-has-key($brand-palette, error) {
+    $error-color: map-get($brand-palette, error) !global;
+  }
+  @if map-has-key($brand-palette, default) {
+    $default-color: map-get($brand-palette, default) !global;
+  }
+}

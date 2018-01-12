@@ -1,0 +1,85 @@
+
+/* Margin -  The prefix for this style should be `.u-`
+   ----------------------------------------------------------------- */
+
+//
+// Helper Margin
+//
+// margin
+//
+// Markup:  <div class="{$modifiers}">
+// </div>
+//
+// .u-mts    - this is margin top to small.
+// .u-mrm     - this is margin right to medium.
+// .u-mbl     - this is margin bottom to large.
+// .u-mls     - this is margin left to small.
+// .u-mvm     - this is margin vertical to top and bottom to medium.
+// .u-mhl     - this is margin horizontal to right and left to large.
+//
+// Styleguide 4.9.1
+
+.u-m {
+  @each $key, $size in $margin-sizes {
+    &t#{$key} {
+      margin-top: #{$size}px !important;
+    }
+    &r#{$key} {
+      margin-right: #{$size}px !important;
+    }
+    &b#{$key} {
+      margin-bottom: #{$size}px !important;
+    }
+    &l#{$key} {
+      margin-left: #{$size}px !important;
+    }
+    &v#{$key} {
+      margin-top: #{$size}px !important;
+      margin-bottom: #{$size}px !important;
+    }
+    &h#{$key} {
+      margin-right: #{$size}px !important;
+      margin-left: #{$size}px !important;
+    }
+  }
+}
+//
+// Helper Padding
+//
+// padding
+//
+// Markup:  <div class="{$modifiers}">
+// </div>
+//
+// .u-pts     - this is padding top to small.
+// .u-prm     - this is padding right to medium.
+// .u-pbl     - this is padding bottom to large.
+// .u-pls     - this is padding left to small.
+// .u-pvm     - this is padding vertical to top and bottom to medium.
+// .u-phl     - this is padding horizontal to right and left to large.
+//
+// Styleguide 4.9.2
+.u-p {
+  @each $key, $size in $padding-sizes {
+    &t#{$key} {
+      padding-top: #{$size}px !important;
+    }
+    &r#{$key} {
+      padding-right: #{$size}px !important;
+    }
+    &b#{$key} {
+      padding-bottom: #{$size}px !important;
+    }
+    &l#{$key} {
+      padding-left: #{$size}px !important;
+    }
+    &v#{$key} {
+      padding-top: #{$size}px !important;
+      padding-bottom: #{$size}px !important;
+    }
+    &h#{$key} {
+      padding-right: #{$size}px !important;
+      padding-left: #{$size}px !important;
+    }
+  }
+}

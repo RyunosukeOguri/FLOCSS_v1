@@ -1,0 +1,38 @@
+
+/* Position -  The prefix for this style should be `.u-`
+   ----------------------------------------------------------------- */
+
+.u-clearfix {
+  @include clearfix();
+}
+.u-float-left {
+  float: left !important;
+}
+.u-float-right {
+  float: right !important;
+}
+
+.u-rel {
+  position: relative;
+}
+.u-abs {
+  position: absolute;
+}
+.u-fixed {
+  position: fixed;
+}
+.u-centered {
+  display: block;
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.u-fixed-bottom {
+  position: fixed;
+  bottom: 20px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  z-index: 10; 
+}

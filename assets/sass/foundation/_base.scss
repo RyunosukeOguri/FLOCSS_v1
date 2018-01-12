@@ -1,0 +1,75 @@
+
+/* Base
+   ----------------------------------------------------------------- */
+
+@charset "UTF-8";
+
+// Bootstrap Grid only
+//
+// Includes relevant variables and mixins for the flexbox grid
+// system, as well as the generated predefined classes (e.g., `.col-sm-4`).
+
+//
+// Box sizing, responsive, and more
+//
+
+@at-root {
+  @-ms-viewport { width: device-width; }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: $html-font-size;
+  line-height: $html-line-height;
+  -webkit-tap-highlight-color: transparent;
+  -ms-overflow-style: scrollbar;
+}
+
+body {
+  background: $body-bg;
+  color: $body-font-color;
+  font-family: $body-font-family;
+  font-size: $font-size-base;  
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  color: $link-color;
+  outline: none;
+  text-decoration: none;
+
+  &:focus {
+    opacity: 0.8
+  }
+
+  &:focus,
+  &:hover,
+  &:active,
+  &.active {
+    color: $link-color-dark;
+    text-decoration: underline;
+  }
+}
+
+a[href^="tel:"] {
+  cursor: pointer;
+}
+
+strong {
+  font-weight: bold;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+  li {
+    list-style: none;
+  }
+}

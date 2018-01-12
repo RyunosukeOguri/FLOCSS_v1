@@ -1,0 +1,16 @@
+
+/* Color -  The prefix for this style should be `.u-`
+   ----------------------------------------------------------------- */
+
+@each $name, $color in $brand-palette {
+  .u-color-#{$name} {
+    color: $color;
+  }
+}
+
+@each $name, $color in $brand-palette {
+  .u-bg-#{$name} {
+    border-color: $color;
+    background-color: $color;
+  }
+}
